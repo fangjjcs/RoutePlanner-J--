@@ -1,0 +1,122 @@
+
+<div class="Map" >
+  <div class="pod">
+    <div class="top">
+      <div class="camera"></div>
+    </div>
+    <div class="middle">
+      <div id="map" class="map"></div>
+      <div class="operation">
+        <div class="input">
+          <div class="inputbox">
+            <div class="txt1">① Choose locations</div>
+            <div class="txt1 txtshow">current location</div>
+            <div class="op1">
+              <div class="ordertxt"> S：</div>
+              <input class="pnt1"  placeholder="driver's location..."/>
+              <div class="addbtn1" id="addbtn1">+</div>
+            </div>
+            <div class="op2">
+              <div class="ordertxt"> R：</div>
+              <input class="pnt2" placeholder="Reservation's location..."/>
+              <div class="addbtn2" id="addbtn2">+</div>
+            </div>
+            <hr>
+            <div class="txt2">② Input time</div>
+            <div class="op1">
+              <div class="ordertxt"> S：</div>
+              <input class="pnt1_time" id="pnt1_hour" placeholder="H"/>
+              <input class="pnt1_time" id="pnt1_min" placeholder="M"/>
+              <div class="addbtn1 t1" id="addbtn1">+</div>
+            </div>
+            <div class="op2">
+              <div class="ordertxt"> R：</div>
+              <input class="pnt2_time" id="pnt2_hour" placeholder="H"/>
+              <input class="pnt2_time" id="pnt2_min" placeholder="M"/>
+              <div class="addbtn2 t1" id="addbtn2">+</div>
+            </div>
+            <div class="txt3">
+              <div class="send" id="send">Send</div>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div class="display">
+          <div class="togglebox">
+            <div class="toggle" id="toggle">
+              <div class="input_info" >Current Time</div>
+              <div class="input_info" id="input_info1">{{CurrentTime}}</div>
+              <div class="input_info" >Reservation Time</div>
+              <div class="input_info input_info2" id="input_info2">{{ReservedTime}}</div>
+              <div class="playbox" v-for="(pair, index) in routes.start.top_right.lat" >
+                <div id="play" class="play" v-on:click="action($event)">{{index+1}}</div>
+              </div>
+              <div class="route" id="show_route" v-on:click="show()">route</div>
+              
+              <div class="slot" id="slot">pick-up prob.</div>
+              <div class="route" id="show_prob" v-for="(t, index) in time" v-on:click="showProb(index)">{{t}}</div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="display2"></div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div id="home" class="home" onclick="refresh()"></div>
+    </div>
+  </div>
+  <div class="note" id="note">
+    <div class="indicators">
+      <div class="or" id="or">Occupied Rate :</div>
+      <div class="or_text" id="or_text"></div>
+      <div class="hr" id="hr">Hit Rate :</div>
+      <div class="hr_text" id="hr_text"></div>
+      <div class="sr" id="sr">Success Rate :</div>
+      <div class="sr_text" id="sr_text"></div>
+    </div>
+    <div class="info">
+      <div class="tt" id="tt">Travel time :</div>
+      <div class="transit_text" id="transit_text"></div>
+      <div class="rd" id="rd">Remain Dist. :</div>
+      <div class="remainD_text" id="remainD_text"></div>
+    </div>
+  </div>
+</div>
+<div class="pageLoading">
+  <div class="scene">
+    <div class="taxi">
+      <div class="billborad">Pick up !</div>
+      <div class="stop"><img src="https://i.imgur.com/59Vq010.png"/></div>
+      <div class="top">
+        <div class="window"></div>
+        <div class="winbar"></div>
+        <div class="board">taxi</div>
+      </div>
+      <div class="bottom">
+        <div class="light"></div>
+        <div class="nob">
+          <div class="nob1"></div>
+          <div class="nob2"></div>
+        </div>
+        <div class="tire">
+          <div class="tire1">
+            <div class="circle"></div>
+          </div>
+          <div class="tire2">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loading">
+      <div class="bar"></div>
+    </div>
+  </div>
+</div>
+
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=&language=en&callback=initMap">
+</script>
