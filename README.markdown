@@ -16,7 +16,7 @@ The first step of using this system is to input a taxi driver’s information an
 <br />
 
 ### Showing complete recommended route 
-![](https://i.imgur.com/5Iwoyiq.png)
+![](https://i.imgur.com/u0bkJcH.png)
 
 While the system return computed a result, as shown in Figure, the taxi driver can observe a complete route on the map including recommended pick-up/drop-off locations which are represented by an orange square and the recommended path between these locations. Moreover, on the left side of the interface, there has an information box showing the evaluation indicators (occupied, hit and success rate) of the recommended route.
 
@@ -30,6 +30,6 @@ A complete route displays a probable and profitable path for taxi drivers. Howev
 <br />
 
 ### Showing pick-up probabilities
-![](https://i.imgur.com/G0LV6F2.png)
+![](https://i.imgur.com/1hWYlTX.png)
 
  the fourth function of this system is to show predicted pick-up probabilities in each time interval which are included in a search time. By clicking on the button of a specified time interval, the map will show the corresponding distribution of pick-up probabilities in Manhattan. We render probabilities by different darkness of the orange color. With this visualized information, taxi drivers can also directly observe where are the hot spots for picking up passengers for now or a few hours later.
