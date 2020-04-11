@@ -1,10 +1,9 @@
 # RoutePlanner(J*)
 
-A Taxi Route Recommendation System (Only front-end, back-end files are not included)
-(J*: A Multi-Criteria Approach Using Spatial-Temporal Predictions)
- 
-<br />
- 
+A Multi-Criteria Taxi Route Recommendation System Using Spatial-Temporal Predictions.
+(Only front-end, back-end files are not included)
+
+  
 ### The architecture of demonstration system
 ![](https://i.imgur.com/i2XLL9g.png)
 
