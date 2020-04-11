@@ -1,6 +1,6 @@
 # RoutePlanner(J*)
 
-A Taxi Route Recommendation System
+A Taxi Route Recommendation System (Only front-end, back-end files are not included)
 (J*: A Multi-Criteria Approach Using Spatial-Temporal Predictions)
  
 <br />
