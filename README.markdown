@@ -1,7 +1,7 @@
 # A Multi-Criteria System for Recommending Taxi Routes with an Advance Reservation
 
 A Multi-Criteria Taxi Route Recommendation System Using Spatial-Temporal Predictions.
-(Only contains front-end files, back-end files are not included)
+(Only contains front-end files, back-end files are not included) And this is my master degree research in NCKU institude of computer and communication engineering which has been accepted to ECML-PKDD in 2020.
 
   
 ### The architecture of demonstration system
